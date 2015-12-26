@@ -4,7 +4,8 @@ module.exports = function(grunt) {
 		cssmin: {
 			compress: {
 				files: {
-					'dest/min.css': ['css/*.css']
+					'dest/min.css': ['css/*.css'],
+					'sprite/sprite.min.css':['sprite/sprite.css']
 				}
 			}
 		},
@@ -24,8 +25,8 @@ module.exports = function(grunt) {
 		sprite: {
 			all: {
 				src: 'img/*.png',
-				dest: 'dest/sprite.png',
-				destCss: 'dest/sprite.css'
+				dest: 'sprite/sprite.png',
+				destCss: 'sprite/sprite.css'
 			}
 		}
 	});
